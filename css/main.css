@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,900);
+@import url(http://fonts.googleapis.com/css?family=Poly);
+/* line 7, ../../src/scss/main.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../../src/scss/main.scss */
+body {
+  font-family: 'Ledger', sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  color: white;
+}
+
+/* line 20, ../../src/scss/main.scss */
+main {
+  height: 100vh;
+  padding: 2em;
+}
