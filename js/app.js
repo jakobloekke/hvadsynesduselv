@@ -12,7 +12,7 @@ app.controller('MainCtrl', function ($scope, SETTINGS) {
         {name: 'red'}
     ];
 
-    $scope.farve = 'green';
+    $scope.farve = {name: 'green'};
 });
 
 app.filter('reverse', function() {

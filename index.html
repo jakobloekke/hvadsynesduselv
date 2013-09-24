@@ -35,8 +35,8 @@
     <![endif]-->
   </head>
   <body ng-controller="MainCtrl">
-    <div ng-style="{backgroundColor: farve}">
-      <h1>{{farve}}</h1>
+    <div ng-style="{backgroundColor: farve.name}">
+      <h1>{{farve.name}}</h1>
       <form>
         <!--p(ng-repeat='color in colors')
         <input type="radio" ng-model="farve" ng-value="{{color}}"><span>{{color}}</span>
