@@ -31,15 +31,20 @@
     -->
     <p>{{farve}}</p>
     <main ng-style="{backgroundColor: farve}">
-      <p>
-        <input type="radio" ng-model="farve" value="green"><span>Grøn</span>
-      </p>
-      <p>
-        <input type="radio" ng-model="farve" value="blue"><span>Blå</span>
-      </p>
-      <p>
-        <input type="radio" ng-model="farve" value="red"><span>Rød</span>
-      </p>
+      <form>
+        <p>
+          <input type="radio" ng-model="farve" value="green"><span>Grøn</span>
+        </p>
+        <p>
+          <input type="radio" ng-model="farve" value="blue"><span>Blå</span>
+        </p>
+        <p>
+          <input type="radio" ng-model="farve" value="red"><span>Rød</span>
+        </p>
+        <select ng-model="farve">
+          <option value="blue">Blå</option>
+        </select>
+      </form>
     </main>
   </body>
 </html>
