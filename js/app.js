@@ -6,13 +6,9 @@ app.constant('SETTINGS', {
 
 app.controller('MainCtrl', function ($scope, SETTINGS) {
 
-    $scope.colors = [
-        {name: 'green'},
-        {name:'blue'},
-        {name: 'red'}
-    ];
+    $scope.colors = ['green', 'blue', 'red'];
 
-    $scope.farve = {name: 'green'};
+    $scope.farve = 'green';
 });
 
 app.filter('reverse', function() {
