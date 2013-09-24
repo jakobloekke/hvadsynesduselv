@@ -39,7 +39,7 @@
       <h1>{{farve}}</h1>
       <form>
         <p ng-repeat="color in colors">
-          <input type="radio" ng-model="farve" ng-value="{{color}}"><span>{{color}}</span>
+          <input type="radio" ng-model="farve" ng-value="color"><span>{{color}}</span>
         </p>
         <select ng-model="farve" ng-options="c for c in colors"></select>
       </form>
