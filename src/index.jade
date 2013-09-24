@@ -1,8 +1,8 @@
 !!! 5
 
 //if lt IE 10
-    html.oldie#ng-app(ng-app='app')
-//[if gt IE 8]<!
+    html.oldie#ng-app(ng-app='app', xmlns:ng='http://angularjs.org')
+//[if gt IE 9]<!
 html(ng-app='app')
     //<![endif]
 
@@ -10,11 +10,15 @@ html(ng-app='app')
 
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
         meta(charset='utf-8')
-        //base(href='/')
 
         link(rel='stylesheet', type='text/css', href='css/main.css')
 
-        script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/firebug-lite/1.4.0/firebug-lite.js')
+
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js')
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js')
+
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js')
         script(src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.js')
         script(src='js/app.js')
 
@@ -27,18 +31,18 @@ html(ng-app='app')
             ga('create', 'UA-3365089-9', 'hvadsynesduselv.dk');
             ga('send', 'pageview');
 
+
     body(ng-controller='MainCtrl')
 
-        //header
-            h1 Hvad synes du selv!
-
         main(ng-style="{backgroundColor: farve}")
-            p
-                input(type='radio', ng-model='farve', value='green')
-                span Grøn
-            p
-                input(type='radio', ng-model='farve', value='blue')
-                span Blå
-            p
-                input(type='radio', ng-model='farve', value='red')
-                span Rød
+
+            h1 {{farve}}
+
+            form
+
+                p(ng-repeat='color in colors')
+                    input(type='radio', ng-model='$parent.farve', ng-value='color')
+                    span {{color}}
+
+
+                select(ng-model='farve', ng-options='c for c in colors')
