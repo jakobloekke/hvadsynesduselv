@@ -27,7 +27,7 @@
     </script>
   </head>
   <body ng-controller="MainCtrl">
-    <main ng-style="{backgroundColor: farve}">
+    <div ng-style="{backgroundColor: farve}">
       <h1>{{farve}}</h1>
       <form>
         <!--p(ng-repeat='color in colors')
@@ -37,6 +37,6 @@
           <option ng-repeat="color in colors" ng-value="{{color}}">{{color}}</option>
         </select>
       </form>
-    </main>
+    </div>
   </body>
 </html>
