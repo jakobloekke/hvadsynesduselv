@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--[if lt IE 10]>
-<html id="ng-app" ng-app="app" class="oldie"></html>
+<html id="ng-app" ng-app="app" xmlns:ng="http://angularjs.org" class="oldie"></html>
 <![endif]-->
-<!--[if gt IE 8]<!-->
+<!--[if gt IE 9]<!-->
 <html ng-app="app">
   <!--<![endif]-->
   <head>
@@ -10,8 +10,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/firebug-lite/1.4.0/firebug-lite.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.js"></script>
     <script src="js/app.js"></script>
     <script>
@@ -26,9 +27,6 @@
     </script>
   </head>
   <body ng-controller="MainCtrl">
-    <!--header
-    <h1>Hvad synes du selv!</h1>
-    -->
     <main ng-style="{backgroundColor: farve}">
       <h1>{{farve}}</h1>
       <form>
