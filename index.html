@@ -41,9 +41,9 @@
         <!--p(ng-repeat='color in colors')
         <input type="radio" ng-model="farve" ng-value="{{color}}"><span>{{color}}</span>
         -->
-        <ng-select ng-model="farve">
-          <ng-option ng-repeat="color in colors" ng-value="{{color}}">{{color}}</ng-option>
-        </ng-select>
+        <select ng-model="farve">
+          <option ng-repeat="color in colors" ng-value="{{color}}">{{color}}</option>
+        </select>
       </form>
     </div>
   </body>
