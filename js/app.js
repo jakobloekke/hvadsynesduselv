@@ -6,7 +6,11 @@ app.constant('SETTINGS', {
 
 app.controller('MainCtrl', function ($scope, SETTINGS) {
 
-    $scope.colors = ['green', 'blue', 'red'];
+    $scope.colors = [
+        {name: 'green'},
+        {name:'blue'},
+        {name: 'red'}
+    ];
 
     $scope.farve = 'green';
 });
