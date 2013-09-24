@@ -35,7 +35,7 @@
     <![endif]-->
   </head>
   <body ng-controller="MainCtrl">
-    <div ng-style="{backgroundColor: farve.name}">
+    <main ng-style="{backgroundColor: farve.name}">
       <h1>{{farve.name}}</h1>
       <form>
         <!--p(ng-repeat='color in colors')
@@ -43,6 +43,6 @@
         -->
         <select ng-model="farve" ng-options="c.name for c in colors"></select>
       </form>
-    </div>
+    </main>
   </body>
 </html>
